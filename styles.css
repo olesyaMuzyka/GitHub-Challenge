@@ -33,3 +33,13 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+.link-name {
+  color: whitesmoke;
+  text-align: center;
+  padding-bottom: 120px;
+  text-decoration: none;
+}
+.github-link {
+  color: whitesmoke;
+  text-decoration: none;
+}
