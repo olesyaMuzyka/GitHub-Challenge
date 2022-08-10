@@ -1,0 +1,35 @@
+h1 {
+  padding-bottom: 30px;
+}
+h4 {
+  color: rgb(21, 35, 226);
+  text-transform: uppercase;
+}
+form {
+  padding-bottom: 30px;
+}
+.todayWeather {
+  padding-bottom: 30px;
+  color: rgb(21, 35, 226);
+}
+.weather {
+  color: rgb(21, 35, 226);
+}
+.forecast {
+  color: whitesmoke;
+}
+.columns {
+  text-align: center;
+}
+.container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 70px;
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-bottom: 70px;
+}
+body {
+  background-image: url("background-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
