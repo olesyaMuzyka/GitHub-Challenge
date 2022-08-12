@@ -31,15 +31,20 @@
       <h4 id="city">TOKYO</h4>
       <div class="todayWeather">
         <div class="todayDate">Monday, July 18, 2022</div>
-        <span class="emoji">⛅</span>
-        <span id="currentTemp"> 31</span>
-        <span>
-          <a hrev="#" id="celsius">°C</a> |
-          <a hrev="#" id="fahrenheit">°F</a></span
-        >
         <div id="description"></div>
-        <div>Humidity: <span id="humidity"></span>%</div>
-        <div>Wind: <span id="wind"></span>km/h</div>
+        <div>
+          <img src="https://openweathermap.org/img/wn/04d@2x.png" id="icon" />
+          <span id="currentTemp"></span>
+          <span>
+            <a hrev="#" id="celsius">°C</a> | <a hrev="#" id="fahrenheit">°F</a>
+          </span>
+
+          <span class="humidity-element"
+            >Humidity: <span id="humidity"></span>%</span
+          >
+
+          <span class="wind-element">Wind: <span id="wind"></span> km/h</span>
+        </div>
       </div>
       <div class="columns">
         <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">

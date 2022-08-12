@@ -50,3 +50,10 @@ body {
   font-size: large;
   font-weight: bold;
 }
+.humidity-element {
+  padding-left: 60px;
+}
+
+.wind-element {
+  padding-left: 60px;
+}
