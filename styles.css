@@ -43,3 +43,10 @@ body {
   color: whitesmoke;
   text-decoration: none;
 }
+#description {
+  text-transform: capitalize;
+}
+#currentTemp {
+  font-size: large;
+  font-weight: bold;
+}

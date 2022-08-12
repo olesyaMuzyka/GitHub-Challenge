@@ -16,8 +16,8 @@
   <body>
     <div class="container">
       <h1>
-        <spam class="weather">WEATHER</spam>
-        <spam class="forecast">FORECAST</spam>
+        <span class="weather">WEATHER</span>
+        <span class="forecast">FORECAST</span>
       </h1>
       <form id="city-form">
         <input type="text" id="text-input" placeholder="Enter a city" />
@@ -30,13 +30,16 @@
       </form>
       <h4 id="city">TOKYO</h4>
       <div class="todayWeather">
-        <span class="todayDate">Monday, July 18, 2022</span>
+        <div class="todayDate">Monday, July 18, 2022</div>
         <span class="emoji">⛅</span>
         <span id="currentTemp"> 31</span>
         <span>
           <a hrev="#" id="celsius">°C</a> |
           <a hrev="#" id="fahrenheit">°F</a></span
         >
+        <div id="description"></div>
+        <div>Humidity: <span id="humidity"></span>%</div>
+        <div>Wind: <span id="wind"></span>km/h</div>
       </div>
       <div class="columns">
         <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
