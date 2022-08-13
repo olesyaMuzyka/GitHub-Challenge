@@ -54,6 +54,7 @@ function showTemperature(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+  celsiusTemperature = response.data.main.temp;
   document
     .querySelector("#icon")
     .setAttribute(
@@ -78,8 +79,31 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(showPosition);
 }
+function showFahrenheitTemperature(event) {
+  event.preventDefault();
+  let currentTemperature = document.querySelector("#currentTemp");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  currentTemperature.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function showCelsiusTemperature(event) {
+  event.preventDefault();
+  let currentTemperature = document.querySelector("#currentTemp");
+  currentTemperature.innerHTML = Math.round(celsiusTemperature);
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", showCelsiusTemperature);
+
+let celsiusTemperature = null;
+
 let searchForm = document.querySelector("#city-form");
 searchForm.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+searchCity("Tokyo");
