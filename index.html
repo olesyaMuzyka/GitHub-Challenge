@@ -20,13 +20,25 @@
         <span class="forecast">FORECAST</span>
       </h1>
       <form id="city-form">
-        <input type="text" id="text-input" placeholder="Enter a city" />
-        <input type="submit" value="Search" />
-        <input
-          type="button"
-          value="Current location"
-          id="current-location-button"
-        />
+        <div class="row">
+          <div class="col-6">
+            <input
+              type="search"
+              id="text-input"
+              placeholder="Enter a city"
+              class="form-control"
+            />
+          </div>
+          <div class="col-3">
+            <input type="submit" value="Search" class="btn btn-primary" />
+            <input
+              type="button"
+              value="Current location"
+              id="current-location-button"
+              class="btn btn-secondary"
+            />
+          </div>
+        </div>
       </form>
       <h4 id="city">TOKYO</h4>
       <div class="todayWeather">
@@ -35,10 +47,7 @@
         <div>
           <img src="https://openweathermap.org/img/wn/04d@2x.png" id="icon" />
           <span id="currentTemp"></span>
-          <span>
-            <a hrev="#" id="celsius">°C</a> | <a hrev="#" id="fahrenheit">°F</a>
-          </span>
-
+          <span class="units">°C</span>
           <span class="humidity-element"
             >Humidity: <span id="humidity"></span>%</span
           >
