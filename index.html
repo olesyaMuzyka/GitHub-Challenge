@@ -42,67 +42,19 @@
       </form>
       <h4 id="city"></h4>
       <div class="todayWeather">
-        <div class="todayDate">Monday, July 18, 2022</div>
+        <div class="todayDate"></div>
         <div id="description"></div>
         <div>
           <img src="https://openweathermap.org/img/wn/04d@2x.png" id="icon" />
           <span id="currentTemp"></span>
-          <span>
-            <a hrev="#" id="celsius">°C</a> | <a hrev="#" id="fahrenheit">°F</a>
-          </span>
+          <span class="units">°C</span>
           <span class="humidity-element"
             >Humidity: <span id="humidity"></span>%</span
           >
-
           <span class="wind-element">Wind: <span id="wind"></span> km/h</span>
         </div>
       </div>
-      <div class="columns">
-        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-          <div class="col">
-            <div class="p-1 border bg-primary text-light">TUESDAY</div>
-          </div>
-          <div class="col">
-            <div class="p-1 border bg-primary text-light">WEDNESDAY</div>
-          </div>
-          <div class="col">
-            <div class="p-1 border bg-primary text-light">THURSDAY</div>
-          </div>
-          <div class="col">
-            <div class="p-1 border bg-primary text-light">FRIDAY</div>
-          </div>
-          <div class="col">
-            <div class="p-1 border bg-primary text-light">SATURDAY</div>
-          </div>
-          <div class="col">
-            <div class="p-5 border bg-light">
-              🌩 <br /><br /><strong> 28°C</strong> <br /><br />
-              July 19
-            </div>
-          </div>
-          <div class="col">
-            <div class="p-5 border bg-light">
-              ⛅️ <br /><br />
-              <strong>33°C</strong> <br /><br />July 20
-            </div>
-          </div>
-          <div class="col">
-            <div class="p-5 border bg-light">
-              ☁️ <br /><br /><strong>29°C</strong> <br /><br />July 21
-            </div>
-          </div>
-          <div class="col">
-            <div class="p-5 border bg-light">
-              🌧 <br /><br /><strong>31°C</strong> <br /><br />July 22
-            </div>
-          </div>
-          <div class="col">
-            <div class="p-5 border bg-light">
-              ⛅️ <br /><br /><strong>30°C</strong> <br /><br />July 23
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="weather-forecast" id="forecast"></div>
     </div>
     <div class="link-name">
       <a
